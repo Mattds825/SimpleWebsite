@@ -1,17 +1,114 @@
+@import 'https://fonts.googleapis.com/css?family=Muli&display=swap';
+
 body{
-  background-color: orange
+  background-color: orange;
+  font-family: 'Muli';
 }
+
 .wrapper{
-  border: 1px black solid;
-  max-width: 1100px;
   margin: 0 auto;
+  max-width: 100%;
 }
+
+img{
+  max-width: 100%;
+}
+
+header{
+  padding: 10px 0;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+nav{
+  text-align: center;
+  padding: 10px 0;
+  margin: 10px 0 0;
+}
+
+nav ul{
+  list-style: none;
+  padding: 0;
+  margin: 0 10px;
+}
+
+nav li{
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover{
+  background-color: black;
+  color: white;
+}
+
+.image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 #main{
   width: 100%;
 }
 #first{
-  padding:5px;
+  background-color: #DDD;
+  padding: 5px;
 }
 #second{
+  background-color: white;
   padding: 5px;
+}
+
+footer{
+  clear: both;
+  background-color: #222;
+  text-align: center;
+  padding-top: 30px;
+  color: #CCC;
+}
+
+@media screen and (min-width: 520px) {
+  #first{
+    width: 48%;
+    float: left;
+  }
+  #second{
+    width: 48%;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  nav{
+    float: left;
+    width: 20%;
+  }
+  nav li {
+    display: block;
+    padding: 10px 0px;
+    width: 90%;
+  }
+  #main{
+    float: right;
+    width: 80%;
+  }
+  footer{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper{
+    max-width: 1100px;
+  }
 }
